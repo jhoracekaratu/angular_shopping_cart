@@ -1,0 +1,32 @@
+
+<div class="card-top">
+<nav>
+  <ul>
+    <li><a href="#">All Products</a></li>
+    <li><a href="#">Electronics</a></li>
+    <li><a href="#">Fashion</a></li>
+  </ul>
+</nav>
+</div>
+
+<div class="container">
+  <div class="row">
+  <ng-container *ngFor="let product of Products">
+    <div class="product col-md-3">
+      <div class="card" style="width: 18rem;">
+    <img src="{{product.image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{product.title}}</h5>
+      <p class="card-text" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis"> {{product.description}}</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+    </div>
+    </div>
+  </ng-container>
+
+
+
+
+
+  </div>
+</div>
