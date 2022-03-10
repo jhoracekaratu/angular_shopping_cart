@@ -1,1 +1,39 @@
-<p>cart works!</p>
+<div class="container">
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Sr. No</th>
+      <th scope="col">Product Name</th>
+      <th scope="col">Product Image</th>
+      <th scope="col">Description</th>
+        <th scope="col">Price</th>
+          <th scope="col">Quantity</th>
+            <th scope="col">Total</th>
+              <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let product of products">
+      <tr>
+        <th scope="row">{{product.id}}</th>
+        <td>{{product.title}}</td>
+        <td><img src="{{product.image}}" alt="" style="width: 120px;" ></td>
+        <td>{{product.description}}</td>
+        <td>{{product.price}}</td>
+        <td></td>
+        <td>@mdo</td>
+        <td><button class="btn btn-primary" (click)=remove(product)>Remove</button></td>
+      </tr>
+    </ng-container>
+
+    <tr>
+      <th scope="row"><button class="btn btn-primary" (click)=removeall()>Empty Cart</button></th>
+      <td><a class="btn btn-primary" routerLink="/products">Shop More</a></td>
+      <td><button class="btn btn-primary">Check out</button></td>
+      <td>Grand Total: {{grand_Total}}</td>
+
+    </tr>
+
+  </tbody>
+</table>
+</div>
