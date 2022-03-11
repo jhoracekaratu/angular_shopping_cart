@@ -32,3 +32,6 @@ nav ul li a {
     margin-bottom: 15px;
   transition: 0.3s ease-in-out;
   }
+.container0{
+  justify-content: center;
+}

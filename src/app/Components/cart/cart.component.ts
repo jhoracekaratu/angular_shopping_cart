@@ -12,11 +12,11 @@ public products:any=[];
 
   ngOnInit(): void {
 this.cart_Service.getProducts().subscribe(res=>{
-  console.log(res);
+
 
   this.products=res;
   this.grand_Total=this.cart_Service.getTotalPrices();
-  console.log(this.grand_Total);
+
 
 })
   }
