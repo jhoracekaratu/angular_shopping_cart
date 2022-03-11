@@ -1,0 +1,13 @@
+HTTrack3.49-2 launched on Fri, 11 Mar 2022 12:04:35 at https://contenthub.netacad.com/itn-dl/1.0.1?lng=en
+(httrack https://contenthub.netacad.com/itn-dl/1.0.1?lng=en )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:08:40	Error: 	"Connect Time Out" (-2) after 2 retries at link https://contenthub.netacad.com/robots.txt (from primary/primary)
+12:08:40	Warning: 	Retry after error -2 (Connect Time Out) at link https://contenthub.netacad.com/itn-dl/1.0.1?lng=en (from primary/primary)
+
+HTTrack Website Copier/3.49-2 mirror complete in 4 minutes 7 seconds : 3 links scanned, 1 files written (4768 bytes overall) [2608 bytes received at 10 bytes/sec], 4768 bytes transferred using HTTP compression in 1 files, ratio 48%
+(1 errors, 1 warnings, 0 messages)

@@ -4,10 +4,10 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#">AngularCart</a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <div class="form-group">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="SearchTerm" (keyup)="search($event)">
             <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+          </div>
         </div>
       </div>
 <div class="">

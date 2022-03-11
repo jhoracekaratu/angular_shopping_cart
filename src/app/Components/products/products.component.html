@@ -2,16 +2,17 @@
 <div class="card-top">
 <nav>
   <ul>
-    <li><a href="#">All Products</a></li>
-    <li><a href="#">Electronics</a></li>
-    <li><a href="#">Fashion</a></li>
+    <li><button class="btn btn-primary" (click)="filter('')">All Products</button></li>
+      <li><button class="btn btn-primary" (click)="filter('electronics')">Electronics</button></li>
+    <li><button class="btn btn-primary" (click)="filter('jewelery')">Jewelery</button></li>
+    <li><button class="btn btn-primary" (click)="filter('fashion')">Fashion</button></li>
   </ul>
 </nav>
 </div>
 
 <div class="container">
   <div class="row">
-  <ng-container *ngFor="let product of Products">
+  <ng-container *ngFor="let product of FilteredCategory |filter:'title':SearchTerm">
     <div class="product col-md-3">
       <div class="card" style="width: 18rem;">
     <img src="{{product.image}}" class="card-img-top" alt="...">
@@ -19,7 +20,7 @@
       <h5 class="card-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis">{{product.title}}</h5>
       <p class="card-text" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis"> {{product.description}}</p>
       <button class="btn btn-primary" (click)=addToCart(product)>Add To Cart</button>
-        
+
     </div>
     </div>
     </div>

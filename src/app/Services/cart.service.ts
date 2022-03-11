@@ -7,6 +7,7 @@ import {BehaviorSubject} from 'rxjs';
 export class CartService {
 public InCart:any=[];
 public InCart_Subject= new BehaviorSubject<any>([]);
+public searchSubject=new BehaviorSubject<string>("");
 
   constructor() {}
 
